@@ -1,0 +1,51 @@
+///content
+
+
+.container{
+    max-width: $contentMaxWidth;
+    
+    article{
+        border: 1px solid transparent;
+        padding: 15px;
+        -webkit-border-image: url('../images/border.png') 30 stretch; /* Safari 3.1-5 */
+        -o-border-image: url('../images/border.png') 30 stretch; /* Opera 11-12.1 */
+        border-image: url('../images/border.png') 30 stretch;
+        border-left:0;
+        border-right:0;
+        border-bottom:0;
+    }
+    .col{
+        float:left;
+    }
+    .col-md-8{
+    background:$contentBackColor;
+    border:10px solid $menuBackColor;
+    padding:25px;
+        p{
+            margin-bottom: 60px;
+        }
+    }
+    .col-md-4{
+        background: $backGroundColor;
+        border:10px solid $borderColor;
+        h6{
+        margin-top:20px;
+        display:block;
+        }
+        .mail{
+            margin:10px;
+            cursor:pointer;
+        }
+        a{
+            text-decoration-line: $fontcolor;
+            &:hover{
+                color:$fontcolor;
+            }
+        }
+        p{
+            margin-top:10px;
+        }
+    }
+}
+
+////end content
